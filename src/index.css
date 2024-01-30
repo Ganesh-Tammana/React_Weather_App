@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* const API_KEY = 'cd242645cb4ec98a801fce3fd6ffbcf0'; */
+/*const temperatureBackgrounds = {
+    'cold': 'url(./src/assets/rainy.jpg)',
+    'moderate': 'url(./src/assets/moderate.jpg)',
+    'warm': 'url(./src/assets/hot.jpg)',
+  };
+
+  const getTemperatureBackground = (temp) => {
+    if (temp < 10) {
+      return temperatureBackgrounds.rainy;
+    } else if (temp >= 10 && temp <= 25) {
+      return temperatureBackgrounds.moderate;
+    } else {
+      return temperatureBackgrounds.warm;
+    }
+  };
+const API_KEY = 'cd242645cb4ec98a801fce3fd6ffbcf0';
+  const temperatureBackground = getTemperatureBackground(wdata.main ? wdata.main.temp : 0);
+ style={{backgroundImage:temperatureBackground}}*/
+
+ /* <table >
+              <tbody className='text-fuchsia-100'>
+                <tr className='lg:p-6'><td className='p-3  text-xl'> <FontAwesomeIcon icon={faTemperature4} className="text-xl text-black transition-transform transform hover:scale-110 lg:hover:text-amber-400 "/> Temperature:</td><td  className='lg:p-3  text-xl'>{wdata.main.temp >= -100 && wdata.main.temp <= 100
+                ? wdata.main.temp.toFixed(2): (wdata.main.temp - 273.15).toFixed(2)}°C</td></tr>
+
+                <tr><td className='p-3 text-xl'> <FontAwesomeIcon icon={faTemperatureHigh} className="text-xl text-black transition-transform transform hover:scale-110 lg:hover:text-orange-400 " /> Feels Like:</td><td  className='lg:p-3  text-xl'>{wdata.main.feels_like >= -100 && wdata.main.feels_like <= 100
+                ? wdata.main.feels_like.toFixed(2): (wdata.main.feels_like - 273.15).toFixed(2)}°C</td></tr>
+                
+                  date.getDate() + '-' + monthNames[date.getMonth()] + '-' + date.getFullYear()
+                <tr><td className='p-3 text-xl'><FontAwesomeIcon icon={faTint}  className="text-xl text-black transition-transform transform hover:scale-110 lg:hover:text-sky-500 "/>  Humidity:</td><td  className='lg:p-3  text-xl'>{wdata.main.humidity}%</td></tr>
+                <tr><td className='p-3 text-xl'><FontAwesomeIcon icon={faWind} className="text-xl text-black transition-transform transform hover:scale-110 lg:hover:text-zinc-400 " /> Wind Speed:</td><td  className='lg:p-3  text-xl'>{wdata.wind.speed}km/h</td></tr>
+                <tr><td className='p-3 text-xl'><FontAwesomeIcon icon={faFlag} className="text-xl text-black transition-transform transform hover:scale-110 lg:hover:text-green-700 " /> Country:</td><td  className='lg:p-3  text-xl'>{wdata.sys.country}</td></tr>
+                <tr><td className='p-3 text-xl'><FontAwesomeIcon icon={faMapMarker} className="text-xl text-black transition-transform transform hover:scale-110 lg:hover:text-red-500 " /> Location:</td><td  className='lg:p-3  text-xl'>{wdata.name}</td></tr>
+              </tbody>
+            </table> */
+
+/*
+                   const temperatureBackgrounds = {
+    'cold': 'url(./src/assets/rainy.jpg)',
+    'moderate': 'url(./src/assets/moderate.jpg)',
+    'warm': 'url(./src/assets/hot.jpg)',
+  };
+
+  const getTemperatureBackground = (temp) => {
+    if (temp < 10) {
+      return temperatureBackgrounds.cold;
+    } else if (temp >= 10 && temp <= 25) {
+      return temperatureBackgrounds.moderate;
+    } else {
+      return temperatureBackgrounds.warm;
+    }
+  };
+  const temperatureBackground = getTemperatureBackground(wdata ? wdata.main.temp : 0);
+ 
+
+
+  const BgIcons={
+    'strom':'url(./assets/strom.svg)',
+    'rain':'url(./assets/rain.svg)',
+    'sun':'url(./assets/sun.svg)',
+    'wind':'url(./assets/wind.svg)',
+    'fog':'url(./assets/fog.svg)'
+  }
+  const Icons = (value) => {
+    switch (value) {
+      case 'storm':
+        return BgIcons.storm;
+      case 'rain':
+        return BgIcons.rain;
+      case 'sun':
+        return BgIcons.sun;
+      case 'wind':
+        return BgIcons.wind;
+      case 'fog':
+        return BgIcons.fog;
+      default:
+        return 'Clear_Day';
+    }
+  };
+
+   style={{backgroundImage:temperatureBackground}} 
+*/
