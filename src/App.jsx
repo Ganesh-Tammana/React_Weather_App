@@ -190,7 +190,8 @@ const App = () => {
   };
   
   
-  const Bgimg=Icons(wdata ? wdata.weather[0].main : null);
+  const Bgimg = wdata && wdata.weather && wdata.weather.length > 0 && wdata.weather[0].main ? Icons(wdata.weather[0].main) :  BgIcons.tornado;
+  
   return (
     <div className='w-full h-screen md:flex md:justify-center md:items-center lg:flex  justify-center items-center font-sans  bg-cover bg-bottom ' style={{backgroundImage:`url(${BG})`}}>
 
