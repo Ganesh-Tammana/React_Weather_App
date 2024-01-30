@@ -15,7 +15,7 @@ import BG from './assets/nature2.jpg'
 import {faSearch,faTemperature4,faTemperatureHigh,faTint,faWind,faMapMarker,faFlag} from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 const Card = lazy(() => import('./cards'));
-const API_KEY = 'cd242645cb4ec98a801fce3fd6ffbcf0';
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const App = () => {
   
