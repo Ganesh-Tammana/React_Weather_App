@@ -17,12 +17,12 @@ export default function Card({ title, icon, color, value, symbol }) {
 
   return (
     <div className="bg-opacity-30 backdrop-filter backdrop-blur bg-black gap-2 lg:p-3 md:p-1 p-4 flex flex-col justify-around rounded-lg">
-      <div className="flex gap-2">
+      <div className="flex md:gap-1 gap-2">
         <FontAwesomeIcon icon={icon} className={`md:text-2xl lg:text-3xl text-4xl transition-transform transform ${textColorClass} hover:scale-110 lg:hover:${textColorClass}`} />
-        <h1 className={`text-violet-200 md:text-2xl lg:text-lg font-semibold text-[20px] `}>{title}</h1>
+        <h1 className={`text-violet-200 md:text-lg lg:text-lg font-semibold text-[20px] `}>{title}</h1>
       </div>
       <div>
-        <h1 className={`text-violet-200 lg:text-xl md:text-[calc(22px)] text-[calc(25px)] font-extrabold `}>{value} {symbol}</h1>
+        <h1 className={`text-violet-200 lg:text-xl md:text-lg text-[calc(25px)] font-extrabold `}>{value} {symbol}</h1>
       </div>
     </div>
   );

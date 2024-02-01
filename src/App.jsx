@@ -194,11 +194,11 @@ const App = () => {
   return (
     <div className='w-full h-screen md:flex md:justify-center md:items-center lg:flex  justify-center items-center font-sans  bg-cover bg-bottom ' style={{backgroundImage:`url(${BG})`}}>
 
-      <div className='md:flex md:justify-center md:items-center   sm:flex-row md:flex-row justify-center items-center shadow-2xl  lg:h-4/6 lg:w-1/2 md:h-5/6 md:w-5/6'> 
+      <div className='md:flex md:justify-center md:items-center  flex-row md:flex-row justify-center items-center shadow-2xl  lg:h-4/6 lg:w-[calc(800px)] md:h-[calc(500px)] md:w-[calc(700px)]'> 
 
      
         
-        <div className='sm:w-full sm:h-1/2  md:w-1/2 md:h-full lg:w-1/2 lg:h-full p-2  rounded  text-zinc-700 font-bold md:rounded-tl-lg md:rounded-bl-lg lg:rounded-tl-lg lg:rounded-bl-lg flex flex-col justify-between  bg-cover bg-center' style={{backgroundImage:`url(${Vector})`}} >
+        <div className='w-full h-1/2  md:w-1/2 md:h-full lg:w-1/2 lg:h-full p-2  rounded  text-zinc-700 font-bold md:rounded-tl-lg md:rounded-bl-lg lg:rounded-tl-lg lg:rounded-bl-lg flex flex-col justify-between  bg-cover bg-center' style={{backgroundImage:`url(${Vector})`}} >
           
           <div className='flex flex-col items-end lg:px-5 md:px-4 font-sans   font-extrabold '>
             {wdata && <h1 className='border-b-2 border-gray-300 text-3xl'>{wdata.name}</h1>}
@@ -225,7 +225,6 @@ const App = () => {
           loading ? (
               <div className='flex items-center justify-center h-[calc(100vh-60px)] '>
                   <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" className='animate-spin' viewBox="0 0 512 512"><path d="M222.7 32.1c5 16.9-4.6 34.8-21.5 39.8C121.8 95.6 64 169.1 64 256c0 106 86 192 192 192s192-86 192-192c0-86.9-57.8-160.4-137.1-184.1c-16.9-5-26.6-22.9-21.5-39.8s22.9-26.6 39.8-21.5C434.9 42.1 512 140 512 256c0 141.4-114.6 256-256 256S0 397.4 0 256C0 140 77.1 42.1 182.9 10.6c16.9-5 34.8 4.6 39.8 21.5z" /></svg>
-
               </div>
           ) :
             <form onSubmit={handleSubmit}  className='flex flex-col lg:gap-8 md:gap-12 items-center justify-center  '>
