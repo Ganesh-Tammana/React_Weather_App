@@ -192,7 +192,7 @@ const App = () => {
   const Bgimg = wdata && wdata.weather && wdata.weather.length > 0 && wdata.weather[0].main ? Icons(wdata.weather[0].main) :  BgIcons.tornado;
   
   return (
-    <div className='w-full h-screen md:flex md:justify-center md:items-center lg:flex  justify-center items-center font-sans  bg-cover bg-bottom ' style={{backgroundImage:`url(${BG})`}}>
+    <div className='w-full h-screen md:flex md:justify-center md:items-center lg:flex  justify-center items-center font-sans  bg-cover bg-bottom ' style={{backgroundImage:`url(${Bgimg})`}}>
 
       <div className='md:flex md:justify-center md:items-center  flex-row md:flex-row justify-center items-center shadow-2xl  lg:h-4/6 lg:w-[calc(800px)] md:h-[calc(500px)] md:w-[calc(700px)]'> 
 
