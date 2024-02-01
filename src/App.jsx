@@ -206,7 +206,7 @@ const App = () => {
           </div>
 
           <div className='flex justify-center flex-col  items-center '>
-            <div className='bg-cover bg-center w-36 h-36' style={{backgroundImage:`url(${Bgimg})`}}></div>
+            <div className='bg-cover bg-center w-36 h-36' style={{backgroundImage:`url(${Nature})`}}></div>
             {wdata &&  wdata.main && (<h1 className='text-xl'>{wdata.weather[0].main}</h1>)}
           </div>
 
