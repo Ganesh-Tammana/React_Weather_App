@@ -160,13 +160,15 @@ const App = () => {
   
   const BgIcons={'haze':Sun,'rain':Rain,'sun':Strom,'wind':Wind,'fog':Fog,'clouds':Clouds,'snow':Snow,
   'drizzle':Sleet,'dust':Wind,'smoke':Fog,'tornado':Wind,'mist':Mist}
-  
+  const imageurl='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg';
+ 
+
   const Icons = (value) => {
     switch (value) {
       case "Haze":
           return BgIcons.haze;
       case "Clouds":
-        return BgIcons.clouds;
+        return BgIcons.clouds
       case "Rain":
         return BgIcons.rain;
       case "Snow":
@@ -188,7 +190,7 @@ const App = () => {
     }
   };
   
-  
+  // const iconUrl = 'https://www.flaticon.com/svg/static/icons/svg/3222/3222791.svg';
   const Bgimg = wdata && wdata.weather && wdata.weather.length > 0 && wdata.weather[0].main ? Icons(wdata.weather[0].main) :  BgIcons.tornado;
   
   return (
@@ -206,7 +208,9 @@ const App = () => {
           </div>
 
           <div className='flex justify-center flex-col  items-center '>
-            <div className='bg-cover bg-center w-36 h-36' style={{backgroundImage:`url(${Nature})`}}></div>
+            <div className='bg-cover bg-center w-36 h-36'>
+              <img src={Bgimg} alt="Cloud Icon" className="w-36 h-36" />
+            </div>
             {wdata &&  wdata.main && (<h1 className='text-xl'>{wdata.weather[0].main}</h1>)}
           </div>
 
