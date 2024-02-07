@@ -160,7 +160,7 @@ const App = () => {
   
   const BgIcons={'haze':Sun,'rain':Rain,'sun':Strom,'wind':Wind,'fog':Fog,'clouds':Clouds,'snow':Snow,
   'drizzle':Sleet,'dust':Wind,'smoke':Fog,'tornado':Wind,'mist':Mist}
-  const imageurl='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg';
+  
  
 
   const Icons = (value) => {
@@ -190,13 +190,13 @@ const App = () => {
     }
   };
   
-  // const iconUrl = 'https://www.flaticon.com/svg/static/icons/svg/3222/3222791.svg';
+  
   const Bgimg = wdata && wdata.weather && wdata.weather.length > 0 && wdata.weather[0].main ? Icons(wdata.weather[0].main) :  BgIcons.tornado;
   
   return (
     <div className='w-full h-screen md:flex md:justify-center md:items-center lg:flex  justify-center items-center font-sans  bg-cover bg-bottom ' style={{backgroundImage:`url(${BG})`}}>
 
-      <div className='md:flex md:justify-center md:items-center  flex-row md:flex-row justify-center items-center shadow-2xl  lg:h-4/6 lg:w-[calc(800px)] md:h-[calc(500px)] md:w-[calc(700px)]'> 
+      <div className='md:flex md:justify-center md:items-center  flex-row md:flex-row justify-center items-center shadow-2xl  lg:h-[550px] lg:w-[calc(800px)] md:h-[calc(500px)] md:w-[calc(700px)]'> 
 
      
         
@@ -208,8 +208,8 @@ const App = () => {
           </div>
 
           <div className='flex justify-center flex-col  items-center '>
-            <div className='bg-cover bg-center w-36 h-36'>
-              <img src={Bgimg} alt="Cloud Icon" className="w-36 h-36" />
+            <div className='bg-cover bg-center w-[150px] h-[150px]'>
+              <img src={Bgimg} alt="Cloud Icon" className="w-[150px] h-[150px] lg:w-36 lg:h-36" />
             </div>
             {wdata &&  wdata.main && (<h1 className='text-xl'>{wdata.weather[0].main}</h1>)}
           </div>
@@ -231,7 +231,7 @@ const App = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" className='animate-spin' viewBox="0 0 512 512"><path d="M222.7 32.1c5 16.9-4.6 34.8-21.5 39.8C121.8 95.6 64 169.1 64 256c0 106 86 192 192 192s192-86 192-192c0-86.9-57.8-160.4-137.1-184.1c-16.9-5-26.6-22.9-21.5-39.8s22.9-26.6 39.8-21.5C434.9 42.1 512 140 512 256c0 141.4-114.6 256-256 256S0 397.4 0 256C0 140 77.1 42.1 182.9 10.6c16.9-5 34.8 4.6 39.8 21.5z" /></svg>
               </div>
           ) :
-            <form onSubmit={handleSubmit}  className='flex flex-col lg:gap-8 md:gap-12 items-center justify-center  '>
+            <form onSubmit={handleSubmit}  className='flex flex-col lg:gap-8 md:gap-12 items-center justify-center rounded'>
               <h2 className='font-extrabold text-4xl text-white/80 tracking-wider'>Weather Info</h2>
               <div className='flex  md:justify-evenly w-full lg:justify-around p-1 gap-4 '>
                 <input
